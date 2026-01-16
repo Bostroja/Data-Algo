@@ -1,7 +1,19 @@
-public class Vehicle {
+abstract class Vehicle {
 
-    String name;
+    private String name;
     String vehicleType;
+
+    double price;
+    double discount;
+
+    public  Vehicle(String name, String vehicleType) {
+        this.name = name;
+        this.vehicleType = vehicleType;
+    }
+
+    public String soundWarning(){
+        return "default sound";
+    }
 
     public String  getName(){
         return name;
@@ -11,7 +23,18 @@ public class Vehicle {
         this.name = name;
     }
 
-    public String getVehicleType() {
+    public String getVehicleType(){
         return vehicleType;
+    }
+
+    public double getPrice(){
+        return price * discount;
+    }
+
+    public void setPrice(double price) {
+        if (price <0) {
+            throw new RuntimeException("Price cannot be negative");
+        }
+        this.price = price;
     }
 }
