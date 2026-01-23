@@ -1,52 +1,88 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Vehicle car = new Car("Audi", 14000);
-        Vehicle bike = new Bike("Yamaha");
-        Car car2 = new Car ("Volvo");
-        Vehicle todaysVehicle;
+        Scanner textInput = new Scanner(System.in);
+        /*
+        System.out.print("Skriv någonting roligt: ");
+        String str = textInput.nextLine();
+        System.out.printf("Du skrev: %s\n", str);
+        */
 
-        //Abstract class gör detta omöjligt
-        //Vehicle boat = new Vehicle("Buster","båt");
+        BikeShop bikeShop = new BikeShop();
+        bikeShop.addBike(new Bike("Scott", 500));
+        bikeShop.getBike(0).addSpec("wheel-size", "29 inch");
+        bikeShop.getBike(0).addSpec("suspension", "hardtail");
 
-        //car.setPrice(10000);
+        bikeShop.addBike(new Bike("Jopo", 200));
+        bikeShop.getBike(1).addSpec("wheel-size", "24 inch");
+        bikeShop.getBike(1).addSpec("suspension", "none");
 
-        //Finare formattering
-        System.out.printf("%s kostar %.2f €\n",
-                car.getName(),
-                car.getPrice()
-        );
-        System.out.println(car.getName() + " kostar " + car.getPrice());
-
-
-        todaysVehicle = car;
-        System.out.printf("I dag åker jag %s\n",todaysVehicle.getName());
-        todaysVehicle = bike;
-        System.out.printf("Imorgon åker jag %s\n",todaysVehicle.getName());
-
-        //overload
-        car2.refuel();
-        car2.refuel(50);
-
-        Shirt shirt = new Shirt("H&M", "White", "20");
-        Trousers trousers = new Trousers("Lidl","Blue","50");
-
-        //Lektionsexempel
-        System.out.println(car.getName()+ " is " + car.getVehicleType());
-        System.out.println(bike.getName()+ " is " + bike.getVehicleType());
+        bikeShop.addBike(new Bike("Yamaha", 700));
+        bikeShop.getBike(2).addSpec("frame", "carbon");
 
 
+        System.out.println("Välkommen till Bike Shop! Våra cyklar:");
+        for (int i = 0; i < bikeShop.getBikeCount(); i++) {
+            Bike bike = bikeShop.getBike(i);
+            System.out.printf("%d - %s %.2f € saldo: %d\n%s",
+                    i + 1,
+                    bike.getName(),
+                    bike.getPrice(),
+                    bike.getStock(),
+                    bike.getSpecsString());
+        }
+
+        while (true) {
+
+            System.out.printf("\nVilken cykel vill du köpa? (1-%d, Q to quit): ",
+                    bikeShop.getBikeCount());
+            String bikeInput = textInput.nextLine();
+
+            if (bikeInput.equalsIgnoreCase("q")){
+                System.out.println("Tack, välkommen åter!");
+                System.exit(0);
+            }
+
+            try {
+                // Integer.parseInt(str) ändrar String till int
+                int chosenBike = Integer.parseInt(bikeInput) - 1;
+                Bike bikeOwned = bikeShop.getBike(chosenBike);
+                System.out.printf("Grattis, du äger nu cykel %s\n", bikeOwned.getName());
+                break; //Slutar loopen
+
+            } catch (NumberFormatException e) {
+                System.out.println("Du måste ge ett heltal!");
+            } catch (IndexOutOfBoundsException e) {
+                System.out.println("Det finns ingen sådan cykel");
+            } catch (Exception e){
+                System.out.println("Någonting gick fel." + e.getMessage()); //Error meddelandet kan vara farligt om användaren ser för mycket info
+            }
+        }
 
 
-        System.out.println(car.getName() + " säger " + car.soundWarning());
-        System.out.println(bike.getName() + " säger " + bike.soundWarning());
+        /*
+        // Calculator Code Challenge
+        CC_Calculator calculator = new CC_Calculator();
+        System.out.println(calculator.multiply(5, 4));
+        System.out.println(calculator.multiply(7, 6, 3));
 
 
-        //Clothing CC
-        System.out.println("Skjortan är märket: " + shirt.getBrand() + " är " + shirt.getColor()+ " och kostar " + shirt.getPrice());
-        System.out.println("Byxorna är märket: " +trousers.getBrand() + " är " + trousers.getColor()+ " och kostar " + trousers.getPrice());
 
+        //Random Rundown CC
+        Random random = new Random();
+        while (true) {
+            System.out.printf("Här är en slumpmässig nummer:%s ,vill du ha en ny nummer tryck enter, om du vill lämna tryck q\n",
+            random.nextInt(1, 100)
+            );
+            if (textInput.nextLine().equalsIgnoreCase("q")){
+                System.out.println("Hoppas det var roligt!");
+                System.exit(0);
+            }
+        }*/
     }
 
 }

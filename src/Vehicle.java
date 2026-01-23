@@ -1,38 +1,38 @@
 abstract class Vehicle {
 
     private String name;
-    String vehicleType;
+    private String vehicleType;
 
     double price;
-    double discount;
+    double discount = 1;
 
-    public  Vehicle(String name, String vehicleType) {
+    public Vehicle(String name, String vehicleType) {
         this.name = name;
         this.vehicleType = vehicleType;
     }
 
-    public String soundWarning(){
+    public String soundWarning() {
         return "default sound";
     }
 
-    public String  getName(){
+    public String getName() {
         return name;
     }
 
-    public  void  setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getVehicleType(){
+    public String getVehicleType() {
         return vehicleType;
     }
 
-    public double getPrice(){
-        return price * discount;
+    public double getPrice() {
+        return price*discount;
     }
 
     public void setPrice(double price) {
-        if (price <0) {
+        if (price < 0) {
             throw new RuntimeException("Price cannot be negative");
         }
         this.price = price;
