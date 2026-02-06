@@ -1,50 +1,59 @@
+import java.io.Serializable;
 import java.util.HashMap;
 
-public class Bike extends Vehicle implements Shoppable {
+public class Bike extends Vehicle implements Shoppable, Serializable {
+        /**
+         * This is a bike class
+         */
 
+        private int stock = 0;
 
-    private int stock = 0;
+        private HashMap<String,String> specs = new HashMap<>();
 
-    private HashMap<String,String> specs = new HashMap<>();
-
-    public Bike(String name) {
-        super(name, "pedaled");
-    }
-    public Bike(String name, double price) {
-        super(name, "pedaled");
-        setPrice(price); // anropar superklassens setter
-    }
-
-    public void addSpec (String key, String value) {
-        specs.put(key, value);
-    }
-
-    public String getSpecsString() {
-        String ret = "";
-        // for-each-loop
-        for (String key: specs.keySet()) {
-            ret += String.format(" - %s: %s\n",
-                    key,
-                    specs.get(key)
-            );
+        public Bike(String name) {
+            super(name, "pedaled");
         }
-        return ret;
+        public Bike(String name, double price) {
+            super(name, "pedaled");
+            setPrice(price); // anropar superklassens setter
+        }
+
+        public void addSpec (String key, String value) {
+            specs.put(key, value);
+        }
+
+        public String getSpecsString() {
+            String ret = "";
+            // for-each-loop
+            for (String key: specs.keySet()) {
+                ret += String.format(" - %s: %s\n",
+                        key,
+                        specs.get(key)
+                );
+            }
+            return ret;
+        }
+
+    /* flyttad till BikeFactory
+    public static Bike createRandomBike() {
+        return new Bike("aasdasd", 12123);
     }
+    */
 
-    @Override
-    public String soundWarning() {
-        return "pling-pling";
+        @Override
+        public String soundWarning() {
+            return "pling-pling";
+        }
+
+        @Override
+        public int getStock() {
+            return stock;
+        }
+
+        @Override
+        public void setStock(int stock) {
+            this.stock = stock;
+        }
+
+
     }
-
-    @Override
-    public int getStock() {
-        return stock;
-    }
-
-    @Override
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
-
-}

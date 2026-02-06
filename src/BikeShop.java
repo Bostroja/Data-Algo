@@ -10,9 +10,8 @@ public class BikeShop {
 
     public void addBike(Bike bike) {
         bike.setStock(random.nextInt(9)+1);
-        bike.setStock(random.nextInt(1, 10)); //Funkkar i java 17 och frammåt
+        bike.setStock(random.nextInt(1, 10)); // funkar i Java >= 17
         bikes.add(bike);
-
     }
 
     public Bike getBike(int i) {
