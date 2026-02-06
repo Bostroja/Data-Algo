@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/greeting.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BikeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CCrandomRundown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BikeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BikeShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CC_Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clothing.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shirt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shoppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shoppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trousers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

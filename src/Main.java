@@ -8,9 +8,10 @@ public class Main {
 
         BikeShop bikeShop = new BikeShop();
         bikeShop.addBike(BikeFactory.createExpensiveBike());
-        bikeShop.addBike(BikeFactory.createExpensiveBike());
         bikeShop.addBike(BikeFactory.createCheapBike());
-        bikeShop.addBike(BikeFactory.createCheapBike());
+        bikeShop.addBike(new Bike("Helkama", 200, DiscountCategory.RETURNED));
+        bikeShop.addBike(new Bike("Tunturi", 200, DiscountCategory.USED));
+
 
         Customer customer;
         Object loadedObject = FileUtils.loadObject("customer.save");
@@ -31,11 +32,13 @@ public class Main {
 
         for (int i = 0; i < bikeShop.getBikeCount(); i++) {
             Bike bike = bikeShop.getBike(i);
-            System.out.printf("%d - %s %.2f € lagersaldo: %d st\n",
-                    i+1,
-                    bike.getName(),
-                    bike.getPrice(),
-                    bike.getStock());
+                    System.out.printf("%d - %s %.2f € lagersaldo: %d st, skick: %s (ursprungspris: %.2f)\n",
+                            i+1,
+                            bike.getName(),
+                            bike.getPrice(),
+                            bike.getStock(),
+                            bike.getDiscountCat(),
+                            bike.getGrossPrice());
         }
 
         while (true) {
