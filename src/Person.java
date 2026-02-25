@@ -1,20 +1,20 @@
 public class Person {
     String name;
-    Person next = null;
+    int rank;
 
     public Person(String name) {
         this.name = name;
     }
-    public Person(String name, Person next) {
-        this.name = name;
-        this.next = next;
-    }
+    public Person(String name, int rank) {
+            this.name = name;
+            this.rank = rank;
+        }
 
-    public String getName() {
-        return name;
-    }
+        public String getName() {
+            return name;
+        }
 
-    public Person getNext() {
-        return next;
-    }
-}
+            public int getRank() {
+                return rank;
+            }
+        }
