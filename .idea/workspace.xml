@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BigO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Linky.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stacky.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringArray.java" afterDir="false" />
+    <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="CC Reversal">
+      <change afterPath="$PROJECT_DIR$/src/Queuey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bike.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BikeFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BikeShop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CCrandomRundown.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiscountCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Linky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Linky.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shoppable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stacky.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stacky.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +80,14 @@
       <option name="presentableId" value="Default" />
       <updated>1769152884861</updated>
     </task>
+    <task id="LOCAL−00001" summary="CC Reversal">
+      <option name="closed" value="true" />
+      <created>1772026400953</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1772026400953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CC Reversal" />
+    <option name="LAST_COMMIT_MESSAGE" value="CC Reversal" />
   </component>
 </project>

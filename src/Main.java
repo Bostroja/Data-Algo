@@ -4,21 +4,56 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] testData = {"Frodo", "Samwise", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir", "Meriadoc Brandybuck", "Peregrin Took", "Arwen", "Galadriel", "Elrond", "Saruman", "Gollum", "Éowyn", "Éomer", "Faramir", "Théoden", "Bilbo Baggins", "Treebeard", "Denethor", "Shelob", "Radagast", "Haldir", "Celeborn", "Gríma Wormtongue"};
+        String[] testData = { "Frodo","Samwise","Gandalf","Aragorn","Legolas","Gimli","Boromir","Meriadoc","Peregrin","Arwen","Galadriel","Elrond","Saruman","Gollum","Éowyn","Éomer","Faramir","Théoden","Bilbo","Treebeard","Denethor","Shelob","Radagast","Haldir","Celeborn","Wormtongue" };
 
-        StringArray names = new StringArray(testData);
+        /**
+         * Queue
+         */
+        Queuey q = new Queuey();
+        q.enqueue("Arwen");
+        q.enqueue("Galadriel");
+        q.enqueue("Haldir");
+        System.out.println(q);
+        System.out.println("dequeue: " + q.dequeue());
+        System.out.println(q) ;
+        q.enqueue("Elrond");
+        System.out.println(q);
 
-        System.out.println(names.toString());
-        names.append("Sauron");
-        System.out.println(names.toString());
-        names.insert(4, "Brego");
-        System.out.println(names.toString());
+        /**
+         * Stack
+         */
+        Stacky stacky = new Stacky(5);
+        stacky.push("Meriadoc");
+        stacky.push("Peregrin");
+        stacky.push("Arwen");
+        stacky.push("Galadriel");
+        stacky.push("Elrond");
+        //stacky.push(testData[12]);
+        System.out.println(stacky);
+        System.out.println("pop: " + stacky.pop());
+        System.out.println("pop: " + stacky.pop());
+        stacky.push("Saruman");
+        stacky.push("Gollum");
+        System.out.println(stacky);
 
-        names.reverse();
-        System.out.println(names.toString());
-        // new BigO();
+        /**
+         * Linked list
+         */
+        Linky linky = new Linky();
+        linky.add(new Person(testData[3]));
+        linky.add(new Person(testData[2]));
+        linky.add(new Person(testData[5]));
+        linky.add(new Person(testData[8]));
 
+        System.out.println(linky.toString());
+        System.out.println("Linky size: " + linky.size());
+
+
+        /**
+         * CC Circular Arr-gument
+         */
+        new CCCircularArr();
 
     }
-}
 
+}
