@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="CC Circular Arr">
-      <change afterPath="$PROJECT_DIR$/src/Graphy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hashy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="Catch up lektion 11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +88,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1772026883011</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Catch up lektion 11">
+      <option name="closed" value="true" />
+      <created>1772056001616</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1772056001616</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CC Reversal" />
     <MESSAGE value="CC Circular Arr" />
-    <option name="LAST_COMMIT_MESSAGE" value="CC Circular Arr" />
+    <MESSAGE value="Catch up lektion 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Catch up lektion 11" />
   </component>
 </project>
