@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="Lektion 13 Rekurssion">
+    <list default="true" id="ba057e49-9033-4a95-9f33-1ca946a4fef3" name="Changes" comment="Lektion 13 Rekurssion (fix)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recursy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recursy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +113,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1772614863500</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Lektion 13 Rekurssion (fix)">
+      <option name="closed" value="true" />
+      <created>1772615041145</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1772615041145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +140,7 @@
     <MESSAGE value="Catch up lektion 11" />
     <MESSAGE value="Catch up lektion 12" />
     <MESSAGE value="Lektion 13 Rekurssion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lektion 13 Rekurssion" />
+    <MESSAGE value="Lektion 13 Rekurssion (fix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lektion 13 Rekurssion (fix)" />
   </component>
 </project>

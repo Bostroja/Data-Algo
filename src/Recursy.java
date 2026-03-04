@@ -9,6 +9,19 @@ public class Recursy {
         loop(i+1, max);
     }
 
+    static void countdown(int i){
+        if (i < 0) return ;
+        System.out.println(i + " ");
+        countdown(i-1);
+    }
+
+    static int powCache = 0;
+    static int pow(int n, int pot){
+        if(pot <= 1) return n;
+        int ret = n * pow(n, pot-1);
+        return ret;
+    }
+
     /**
      * Fibonacci
      * vilket är det n:te talet i sekvensen

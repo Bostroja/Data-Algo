@@ -6,7 +6,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Recursy.loop(0, 10);
+        //CC Accursed Recursion
+        System.out.println("Countdown from 10: ");
+        Recursy.countdown(10);
+
+        System.out.println("pow(4, 2)"+ Recursy.pow(4,2));
+        Recursy.pow(4,2);
+
+        /**
+         Recursy.loop(0, 10);
         System.out.println("\n fib: " + Recursy.fib(6)); // 8
         System.out.println(Recursy.ops);
         Recursy.ops = 0;
@@ -18,6 +26,7 @@ public class Main {
         Recursy.ops = 0;
         System.out.println("fastFib: " + Recursy.fastFib(50));
         System.out.println(Recursy.ops);
+         */
 
         System.exit(0);
 
