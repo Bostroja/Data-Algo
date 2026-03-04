@@ -24,7 +24,7 @@ public class Recursy {
         ops++;
         if (n <= 1) return n;
         if (fibCache[n] != 0) return fibCache[n];
-        long ret = fastFib(n-1) + fib(n-2);
+        long ret = fastFib(n-1) + fastFib(n-2);
         fibCache[n] = ret;
         return ret;
     }
